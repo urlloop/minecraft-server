@@ -1,0 +1,6 @@
+{
+  "name": "Minecraft Server",
+  "image": "mcr.microsoft.com/devcontainers/java:17",
+  "postCreateCommand": "docker build -t minecraft-server .",
+  "runArgs": ["--rm", "-p", "25565:25565", "--name", "minecraft-server", "minecraft-server"]
+}
